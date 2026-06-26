@@ -1,0 +1,755 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100vw;
+    height:100vh;
+    background-color: #001a3c;
+}
+body{
+    width: 100%;
+    height:100%;
+}
+main{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100%;
+    height:100%;
+}
+.nav{
+    width:100%;
+    background-color:#001a3c;
+    display:flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+}
+.nav h1{
+    text-align: center;
+    font-size: 1.5rem;
+}
+nav{
+    display:flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+nav a{
+    text-decoration: none;
+}
+button{
+    background-color: #001a3c;
+    border-radius: 13px;
+    padding: 0.5rem 0.5rem;
+    font-size: 0.5rem;
+    color: #B3B3B3;
+    transition: all 0.3s ease;
+}
+button:hover{
+    background-color: rgb(2, 15, 53);
+    color: #86868B;
+    box-shadow: 0px 0px 10px cyan;
+    font-weight: bold;
+    transform: scale(1.1);
+}
+.view1{
+    width: 100%;
+}
+.v1{
+    aspect-ratio: 16/6; 
+    width: 100%;
+    background-image: url('./SCHOOL.png');
+    background-size: cover;
+    /* height: auto; */
+    background-position: center;    
+}
+.v1a{
+    color: rgb(221, 221, 153);
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 1rem;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.v1a h1{
+    line-height: 1.5rem;
+    font-size: 1.5rem;
+}
+.v1b{
+    margin-top: 1rem;
+}
+.view2{
+    /* margin:1rem 0; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width:100%;
+}
+.marquee{
+
+    width:90%;
+   OVERFLOW: hidden;
+    color: #a0a0a9;
+    display: flex;
+    padding:0.3rem;
+    position: relative;
+    align-items: center;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.m1{
+    animation: marquee 35s linear infinite both;
+    width: max-content;
+    display:flex;
+    gap: 2rem;
+    padding: 0 1rem ;
+    white-space: nowrap;
+    font-size: 1.2rem;
+}
+.marquee::before{
+    content:"";
+    width:20%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:5678;
+    background-image:linear-gradient(to right,#001a3c,transparent);
+}
+.marquee::after{
+    content:"";
+    width:20%;
+    height:100%;    
+ position:absolute;
+     top:0;
+   right:0;
+    z-index:678;
+    background-image:linear-gradient(to left,#001a3c,transparent);   
+}
+
+.view3{
+    width:100%;
+    padding: 2rem 1rem;
+    display:flex;
+    flex-direction: column;
+    gap:2rem;
+}
+.top{
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.tp{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 200;
+    color: #fde047;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.topa{
+    display:flex;
+    gap: 1rem;
+    align-items: center;
+}
+.topa p{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.8rem;
+    color: #a0a0a9;
+}
+.topa1{
+    height:100%;
+    width:5px;
+    padding: 2.5rem 0.1rem;
+    background-color: #fde047;
+}
+.top2{
+    display:flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+.top2 p{
+   color: #a0a0a9;
+   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-size: 1rem; 
+   font-weight: 400;
+   padding:0.5rem 0;
+   line-height: 1.3;
+}
+.top2 a button{
+    text-decoration: none;
+    color: #a0a0a9;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem; 
+    font-weight: 400;
+}
+.tpimg{
+    width:100%;
+}
+.tpimg img{
+    object-fit: cover;
+    width:100%;
+    aspect-ratio: 1/1.3;
+}
+
+.card{
+    width: 100%;
+    height: 400px;
+    background-color: #010913;
+    border-radius: 5%;
+    padding: 2rem 1rem;
+    display: flex;
+
+}
+.scroller{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    overflow-y: auto;
+    padding-right: 10px;
+     scroll-behavior: smooth;
+}
+
+.scroller p{
+   width: 100%;
+   color: #a0a0a9;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   border-radius: 15px;
+   padding: 1rem 0.6rem;
+   background-color: #001a3c;
+   scroll-snap-align: start;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-weight: 500;
+   font-size: 1.4rem;
+}  
+.scroller::-webkit-scrollbar{
+    display: none;
+}
+
+.view4{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.view4 .top{
+    padding:4rem 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:#001a3c;
+    text-align: center;
+    line-height:1;
+}
+.view4 .top h1{
+    font-weight: 400;
+    font-size:2.5rem;
+}
+.bottom{
+    width:100%;
+    padding: 2rem;
+}
+.bimg{
+   display: flex;
+   gap:1rem; 
+   overflow-x: auto;
+}
+
+.bottom img{
+   border-radius: 20px;
+   width:90%;
+   aspect-ratio: 1/1.5;
+}
+
+/* Scrollbar hide */
+.bimg::-webkit-scrollbar{
+    display: none;
+}
+
+.view5{
+    background-color:aliceblue;
+    display: grid;
+    padding:3rem 1rem;
+    width:100%;
+    grid-template-areas: 
+        "boxa boxb "
+        "boxc boxd";
+}
+.boxa,.boxb,.boxc,.boxd{
+    width:100%;
+    color: #001a3c;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    padding: 1rem;
+}
+
+.view5 h1{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.view5 p{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.view6{
+    background-color:aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+}
+.image img{
+    width:100%;
+    
+}
+.text{
+    margin-top:-5px;
+    background-color: #001a3c;
+    width:100%;
+    padding: 2rem 1.2rem;
+    line-height: 1.4;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+
+}
+.text h1{
+    font-size: 2rem;
+    font-weight: 400;
+    color:aliceblue;
+}
+.text p{
+    font-size: 1rem;
+    font-weight: 400;
+    color:aliceblue;
+} 
+.text button{
+    width: max-content;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    border-radius: 10px;
+    background-color: #001a3c;
+    color:#B3B3B3;
+}  
+.view7{
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    padding:2rem;
+    gap:2.5rem;
+}
+.gr{
+    text-align: center;
+    width:100%;
+    color:#001a3c;
+}
+.gr h1{
+    font-size:1.3rem;
+    line-height: 1.4;
+}
+.gr p{
+    font-size: 0.95rem;
+    opacity: 0.8;
+    padding:1rem 0;
+}
+
+.view8{
+    width:100%;
+    background-color: #001a3c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 1rem;
+    text-align: center;
+}
+.right{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.view8 h1{
+    color:aliceblue;
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 0;
+    font-weight: 200;
+    padding: 2rem 0;
+}
+.view8 p{
+    font-size: 1rem;
+}
+.right1{
+    width:100%;
+}
+.righta{
+    background-color:#fde047;
+    padding:1.5rem;
+    font-weight: 400;
+    line-height: 1.4;
+    display: flex;
+    flex-direction: column;
+    
+}
+.righta p{
+    font-size:1rem;
+    font-weight: 400;
+}
+.righta a button{
+    font-size: 1rem;
+    padding:0.5rem 1rem;
+    margin-top:1rem;
+    margin-bottom: 0;
+}
+.rightb{
+    width:100%;
+    object-fit: cover;
+}
+.view8 img{
+    width:100%;
+    object-fit: cover;
+}
+
+.view9{
+    background-color: aliceblue;
+    text-align: center;
+    padding:5rem 2rem;
+    color:#001a3c;
+}
+.view9 p{
+    font-weight:200;
+}
+.view9 h1{
+    font-size: 2.3rem;
+    font-weight: 400;
+}
+
+.view10{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    gap: 2rem;
+    color:#B3B3B3;
+}
+.txt{
+    width: 100%;
+}
+.txt h1{
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+.txt p{
+    font-size: 1.2rem;
+    font-weight: 200;
+    padding:0.3rem 0; 
+}
+.txt1{
+    padding:1rem 0;
+}
+.ph img{
+    width:100%;
+}
+footer{
+    width: 100%;
+    background-color: #161615;
+    display: flex;
+    color:aliceblue;
+    flex-direction: column;
+    padding: 2rem 1.3rem;
+}
+footer h1{
+    font-weight: 200;
+    font-size: 1.2rem;
+}
+.paar{
+    padding:0.8rem 0;
+    width: 100%;
+}
+form{
+    padding-top: 0.7rem;
+    width: 100%;
+}
+input{
+    font-size: 1.2rem;
+    padding:0.3rem 0;
+}
+.input button{
+    background-color: crimson;
+    color:aliceblue;
+    border-radius: 0;
+    font-size:1rem;
+    padding:0.5rem 0.7rem;
+}
+.input{
+    width: 100%;
+}
+.xt p{
+    color:#B3B3B3;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+.logo img{
+    width:100px;
+    aspect-ratio: 1/1;
+}
+.xt{
+    width: 100%;
+}
+
+@media (min-width:1020px) {
+    .marquee{
+         padding:0.6rem;
+    }
+    nav a button{
+        font-size: 0.8rem;
+        padding: 0.5rem 1rem;
+    }
+    nav{
+        gap: 2rem;
+    }
+    .v1a{
+        padding: 5rem 2rem;
+        font-size:2rem;
+        line-height: 5rem;
+    }
+    .v1a h1{
+        font-size: 4.5rem;
+        line-height: 4rem;
+        font-weight: 400;
+    }
+    .v1b button{
+        font-size: 0.9rem;
+    }
+    .view3{
+        padding:4rem 4rem;
+        flex-direction: row;
+        align-items:center;
+    }
+    .top{
+        width:90%;
+    }
+    .tp{
+        font-size: 0.8rem;
+        word-spacing:3px;
+    }
+    .topa p{
+        font-size: 1.6rem;
+        font-weight: 300;
+    }
+    .top2 P{
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+    .tpimg{
+        width:60%;
+
+    }
+    .tpimg img{
+        aspect-ratio: 1/0.8;
+    }
+    .scroller p{
+        font-size:0.8em;
+    }
+    .card{
+        width:50%;
+        height: 360px;
+    }
+    br{
+        display:block;
+    }
+    .view4 .top{
+        padding:2rem 0;
+        padding-top: 4rem;
+    }
+    .view4 .top p{
+        opacity:0.7;
+        font-size:1rem;
+    }
+    .bottom{
+       padding: 0 2rem;
+    }
+    .view4 .top h1{
+    font-weight: 400;
+    font-size:3rem;
+    }
+    .bimg{
+        padding:2rem 2rem;
+        gap:1rem;
+    }
+    .bottom img{
+        width: 230px;
+        border-radius: 15px;
+        aspect-ratio: 1/1.9;
+    }
+    .view5{
+        grid-template-areas: "boxa boxb boxc boxd";
+    }
+    .view6{
+        margin-top: -5rem;
+        flex-direction: row;
+        padding-left: 3rem;
+      
+    }
+    .image{
+        margin-top: 10rem;
+        width:100%;
+        padding:5rem 4rem;
+        aspect-ratio: 1/1;
+        position: relative;
+    }
+    .image img{
+        
+        aspect-ratio: 16/9;
+        position: absolute;
+        right: -40px;
+        z-index: 1;
+        
+    }
+    .text{
+        margin-top:0;
+        padding: 5rem 7.8rem;
+    }
+    .text br{
+        display:block;
+    }
+    .text h1{
+        font-size: 3.2rem;
+        font-weight: 200;
+    }
+    .text p{
+        font-size: 1.2rem;
+        font-weight: 200;
+        line-height: 1.5;
+
+    }
+    .view7{
+        width:100%; 
+        background-color: aliceblue;
+        display:flex;
+        gap:2rem;
+        flex-direction: row;
+        text-align: center;
+        padding:0 3rem;
+    }
+    .gr{
+        width:100%;
+        color:#001a3c;
+        /* padding:1rem; */
+    }
+    .gr h1{
+        font-size:1.2rem;
+        line-height: 1.4;
+    }
+    .gr p{
+        font-size: 0.9rem;
+        opacity: 0.8;
+        padding:1rem 0;
+    }
+    .view8{
+        flex-direction:row;
+        gap:2rem;
+        padding:4rem 4rem;
+    }
+    .righta{
+        width:100%;
+        aspect-ratio: 1.4/1 ;
+        padding: 0;
+        text-justify: center;
+    }
+    .rrr{
+       margin: 0 1rem;
+       margin-top: 1.9rem;
+    }
+    .view8 button{
+        font-size:0.9rem;
+        margin:0;
+    }
+    .right1{
+        display: flex;
+        flex-direction: row;
+    }
+    .view8 img{
+        width:100%;
+      aspect-ratio: 1.4/1 ;
+    }
+    .view9 h1{
+        font-size:3rem;
+    }
+    .view10{
+        flex-direction: row;
+        padding:2rem 4rem;
+        align-items: center;
+    }
+    .txt h1{
+        font-size: 3rem;
+    }
+    footer{
+        gap:2rem;
+        padding: 4rem 7rem;
+        flex-direction: row;
+        align-items: center;
+    }
+    .logo img{
+        width:200px;
+    }
+}
+
+@media(min-width:768px){
+    .v1a{
+        padding:5rem 2rem;
+    }
+    .v1a h1{
+        font-size: 2.5rem;
+        font-weight: 400;
+        line-height: 1.1;
+    }
+    .v1a button{
+        font-size: 1rem;
+    }
+    .tpimg img{
+        width: 100%;
+        aspect-ratio: 1/1;
+    }
+    .view3{
+        padding: 2rem 2.4rem;
+    }
+    .view4{
+        padding: 0 1rem;
+    }
+    .text{
+        padding: 2rem;
+    }
+    .view7{
+        padding: 2rem 5rem;
+    }
+    .righta{
+        padding: 4rem 2rem;
+    }
+    .righta p{
+        font-size: 1.4rem;
+
+    }
+    .view8{
+        padding: 4rem 2rem;
+    }
+    .view10{
+        padding: 2rem;
+    }
+    footer{
+        padding:2rem;
+    }
+}
+
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+
+
+
+
+
+
+

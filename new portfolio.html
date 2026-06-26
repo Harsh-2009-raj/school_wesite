@@ -1,0 +1,204 @@
+<html>
+<head>
+    <title>portfolio</title>
+
+    <style>
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: lightgreen;
+    text-align: center;
+    margin: 20px;
+}
+
+/* Sections */
+.header{
+    margin-bottom: 20px;
+}
+
+.intro{
+    margin: 20px;
+}
+
+.hobbies{
+    margin: 20px;
+}
+
+.links{
+    margin: 20px;
+}
+
+.contact{
+    margin: 20px;
+}
+
+/* Image */
+img{
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    width: 150px;
+}
+
+/* Headings */
+h1{
+    color: purple;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 15px;
+}
+
+h2{
+    color: indigo;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+/* Paragraph */
+p{
+    color: black;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 10px;
+}
+
+/* Horizontal Line */
+hr{
+    width: 80%;
+    margin: 25px auto;
+}
+
+/* Links */
+a{
+    color: blue;
+    font-weight: bold;
+    margin: 5px;
+}
+
+/* Form */
+form{
+    width: 50%;
+    margin: 20px auto;
+    padding: 15px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: darkslategray;
+}
+
+/* Labels */
+label{
+    font-weight: bold;
+    color: white;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="email"],
+select{
+    width: 80%;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+/* Buttons */
+button{
+    padding: 5px 15px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+    </style>
+</head>
+
+<body>
+
+<!-- Header Section -->
+<div class="header">
+    <img src="harsh.jpeg" alt="Harsh Raj">
+    <h1>Harsh Raj</h1>
+</div>
+
+<hr>
+
+<!-- Introduction Section -->
+<div class="intro">
+    <h1><u>Introduction:</u></h1>
+    <p>
+        Hello! My name is Harsh Raj, I am from Hajipur, Vaishali.
+        I am 10th passout from <strong>U.H.S Kuttubpur.</strong>
+        I am currently reading in <strong>G.P Chapra</strong> from <em>CSE branch.</em>
+        I am interested in web development and software development.
+    </p>
+</div>
+
+<hr>
+
+<!-- Hobbies Section -->
+<div class="hobbies">
+    <h2><u>Hobbies:</u></h2>
+    <p>Play video games and watch movies</p>
+</div>
+
+<hr>
+
+<!-- Links Section -->
+<div class="links">
+    <a href="anchor tag.html" target="_blank">Click here to check links</a><br><br>
+    <a href="list.html" target="_blank">Click here to check lists</a><br><br>
+    <a href="class routine.html" target="_blank">Click here to check Class routine</a><br><br>
+    <a href="from.html" target="_blank">Click here to submit the form</a>
+</div>
+
+<hr>
+
+<!-- Contact Section -->
+<div class="contact">
+    <h1>Contact Us</h1>
+
+    <form>
+        <label for="Name">Name:<br>
+            <input type="text" name="name" id="Name">
+        </label>
+        <br>
+
+        <label for="Email">Email:<br>
+            <input type="email" name="email" id="Email">
+        </label>
+        <br>
+
+        <label for="Phone">Phone:<br>
+            <input type="text" name="phone" id="Phone">
+        </label>
+        <br><br>
+
+        <input type="radio" name="gen" value="Male">Male
+        <input type="radio" name="gen" value="Female">Female
+        <input type="radio" name="gen" value="Others">Others
+        <br><br>
+
+        <label for="branch">Branch:
+            <select name="Branch" id="branch">
+                <option value="Cse">CSE</option>
+                <option value="Mech">Mech</option>
+                <option value="Electrical">Electrical</option>
+                <option value="Civil">Civil</option>
+                <option value="Ecec">ECEC</option>
+                <option value="Automobile">Automobile</option>
+            </select>
+        </label>
+
+        <br><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Clear</button>
+    </form>
+
+</div>
+
+</body>
+</html>
